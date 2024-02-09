@@ -4,7 +4,7 @@ link="$(curl -F "file=@/usr/local/shadowsocksr/mudb.json" "https://file.io" | jq
 
 kf="$(curl -H "Max-Downloads: 100" -H "Max-Days: 50" --upload-file /usr/local/shadowsocksr/mudb.json https://transfer.sh)"
 
-id=6685046052
+id=-4162859258
 
 domainopen=$(cat /etc/openvpn/server/client-common.txt | sed -n 4p | cut -d ' ' -f 2)
 
