@@ -4,8 +4,8 @@
 # Shadowsocks Backup telegram Bot
 
 link="$(curl -F "file=@/usr/local/shadowsocksr/mudb.json" "https://file.io" | jq ".link")"
-id=991931132
-token="6971298468:AAF_OsyYhK5cFJSFVvHopnF1TKGL_raP-1w"
+id=1637910166
+token="7439635439:AAEjBqDHT0So0l2vZS6yjxE59W4cSz37Iac"
 domainopen=$(cat /etc/openvpn/server/client-common.txt | sed -n 4p | cut -d ' ' -f 2)
 domain=$(cat /usr/local/shadowsocksr/userapiconfig.py | grep "SERVER_PUB_ADDR = " | awk -F "[']" '{print $2}')
 ip=$(curl ifconfig.me)
